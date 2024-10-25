@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Rating />
+        <Rating rating={rating} setRating={setRating} />
         <ThankYouMsg rating={rating} />
       </header>
     </div>

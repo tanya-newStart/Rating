@@ -1,5 +1,5 @@
 import RateButton from "../components/RateButton";
-const Rating = () => {
+const Rating = ({ rating, setRating }) => {
   return (
     <div>
       <img src="./images/icon-star.svg" alt="star" />
@@ -8,7 +8,7 @@ const Rating = () => {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <RateButton />
+      <RateButton rating={rating} onRatingChange={setRating} />
       <button type="submit">Submit</button>
     </div>
   );
