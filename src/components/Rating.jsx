@@ -6,11 +6,11 @@ const Rating = ({ rating, setRating, onSubmit }) => {
       <div className="content">
         <img className="star-image" src="./images/icon-star.svg" alt="star" />
         <h2 className="rating-title">How did we do?</h2>
-        <p className="text">
+        <p className="rating-text">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <RateButtons rating={rating} onRatingChange={setRating} />
+        <RateButtons rating={rating} setRating={setRating} />
         <button className="btn" type="submit" onClick={onSubmit}>
           Submit
         </button>

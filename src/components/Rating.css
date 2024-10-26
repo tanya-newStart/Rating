@@ -1,6 +1,6 @@
 .container {
   max-width: 375px;
-  background-color: hsl(213, 48%, 46%);
+  background-color: hsl(213, 19%, 18%);
   border-radius: 30px;
   padding: 30px;
 }
@@ -24,19 +24,23 @@
   border: none;
   background-color: hsl(25, 97%, 53%);
   margin-top: 15px;
-  padding: 16px 20px;
+  padding: 10px 20px;
   text-transform: uppercase;
   cursor: pointer;
 }
-
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+}
 .rating-title {
   color: hsl(0, 0%, 100%);
   font-size: 28px;
   text-align: left;
   width: 100%;
 }
-.text {
+.rating-text {
   font-size: 15px;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
+  margin-top: 0;
 }
