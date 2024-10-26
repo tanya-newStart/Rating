@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.star-image {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 25px;
+  margin-bottom: 30px;
+}
+.btn {
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  width: 80%;
+  background-color: hsl(25, 97%, 53%);
+  margin-top: 15px;
+  padding: 16px 20px;
+}
+
+.rating-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.text {
+  font-size: 15px;
+  line-height: 1.5;
+}
