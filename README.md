@@ -44,3 +44,5 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@tanya-newStart](https://www.frontendmentor.io/profile/tanya-newStart)
+- Deployment - https://rating-dusky.vercel.app/
+  
