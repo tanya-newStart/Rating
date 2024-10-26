@@ -1,6 +1,6 @@
 import RateButtons from "./RateButtons";
 import "./Rating.css";
-const Rating = ({ rating, setRating }) => {
+const Rating = ({ rating, setRating, onSubmit }) => {
   return (
     <div className="container">
       <div className="content">
@@ -11,7 +11,7 @@ const Rating = ({ rating, setRating }) => {
           is appreciated to help us improve our offering!
         </p>
         <RateButtons rating={rating} onRatingChange={setRating} />
-        <button className="btn" type="submit">
+        <button className="btn" type="submit" onClick={onSubmit}>
           Submit
         </button>
       </div>

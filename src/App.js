@@ -5,12 +5,29 @@ import ThankYouMsg from "./components/ThankYouMsg";
 
 function App() {
   const [rating, setRating] = useState(0);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+    if (rating > 0) {
+      setIsSubmitted(true);
+    } else {
+      alert("Please select a rating before submitting");
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <Rating rating={rating} setRating={setRating} />
-        <ThankYouMsg rating={rating} />
-      </header>
+      <div className="App-content">
+        {isSubmitted ? (
+          <ThankYouMsg rating={rating} />
+        ) : (
+          <Rating
+            rating={rating}
+            setRating={setRating}
+            onSubmit={handleSubmit}
+          />
+        )}
+      </div>
     </div>
   );
 }

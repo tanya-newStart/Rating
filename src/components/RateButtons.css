@@ -5,9 +5,18 @@
   background-color: hsl(217, 12%, 63%);
   margin: 10px;
   border: none;
+  cursor: pointer;
 }
 
+.rate-btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
 .rate-btn.selected {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
+}
+.rate-btn.previous-hover {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
 }
